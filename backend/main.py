@@ -15,20 +15,77 @@ def authenticate():
     except Exception as e:
         return str(e)
 
-@app.route('/api/sea-surface-temperature', methods=['GET'])
-def get_pace_data():
+@app.route('/api/phytoplankton-data', methods=['GET'])
+def get_phytoplankton_data():
     try:
         session = authenticate()
         if isinstance(session, str):
             return jsonify({"error": "Authentication Failed: " + session}), 500
 
         collections = earthaccess.search_datasets(
-            keyword="SEA SURFACE TEMPERATURE",
+            keyword="Pythoplankton",
             cloud_hosted=True,
             count=4
         )
 
-        for collection in collections[0:2]:
+        for collection in collections:
+            return jsonify(collection)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/aerosol-data', methods=['GET'])
+def get_aerosol_data():
+    try:
+        session = authenticate()
+        if isinstance(session, str):
+            return jsonify({"error": "Authentication Failed: " + session}), 500
+
+        collections = earthaccess.search_datasets(
+            keyword="AEROSOL",
+            cloud_hosted=True,
+            count=4
+        )
+
+        for collection in collections:
+            return jsonify(collection)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/cloud-properties-data', methods=['GET'])
+def get_cloud_data():
+    try:
+        session = authenticate()
+        if isinstance(session, str):
+            return jsonify({"error": "Authentication Failed: " + session}), 500
+
+        collections = earthaccess.search_datasets(
+            keyword="CLOUD PROPERTIES",
+            cloud_hosted=True,
+            count=4
+        )
+
+        for collection in collections:
+            return jsonify(collection)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/ocean-ecosystem-data', methods=['GET'])
+def get_ocean_data():
+    try:
+        session = authenticate()
+        if isinstance(session, str):
+            return jsonify({"error": "Authentication Failed: " + session}), 500
+
+        collections = earthaccess.search_datasets(
+            keyword="OCEAN ECOSYSTEM",
+            cloud_hosted=True,
+            count=4
+        )
+
+        for collection in collections:
             return jsonify(collection)
 
     except Exception as e:
