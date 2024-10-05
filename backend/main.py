@@ -13,7 +13,7 @@ def authenticate():
         session = earthaccess.login(strategy="environment")
         return session
     except Exception as e:
-        return srt(e)
+        return str(e)
 
 @app.route('/api/cloud-properties-data', methods=['GET'])
 def get_pace_data():
