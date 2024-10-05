@@ -1,0 +1,20 @@
+{
+  "plankton": {
+    "theme": "plankton-theme",
+    "content": "Description: PACE will measure different types of phytoplankton offering insights into the diversity and health of marine life. Educational Use: Biodiversity Lessons: Show how different phytoplankton species contribute to ocean health, how they thrive in different conditions, and their role in the marine food web. Climate and Environmental Change: Teach about how environmental changes (temperature, nutrient availability) affect phytoplankton populations and consequently marine ecosystems. Interactive Maps: Develop tools to map phytoplankton diversity across different regions allowing learners to compare ocean zones and their biological richness."
+  },
+  "aerosol": {
+    "theme": "aerosol-theme",
+    "content": "This is the content about Aerosols."
+  },
+  "ocean": {
+    "theme": "ocean-theme",
+    "content": "This is the content about the Ocean ecosystem."
+  },
+  "ecosystem": {
+    "theme": "ecosystem-theme",
+    "content": "This is the content about Ecosystems."
+  }
+}
+
+  
