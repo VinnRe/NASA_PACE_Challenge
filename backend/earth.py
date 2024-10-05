@@ -26,12 +26,22 @@ def get_phytoplankton_data():
             keyword="clouds",
             cloud_hosted=True
         )
+        
+        dataset_details = []
+        for dataset in datasets[0:3]:  # Adjust the slice as needed
+            details = {}
+            if 'meta' in dataset:
+                details['concept-id'] = dataset['meta'].get('concept-id', "No concept-id available")
+            if 'umm' in dataset:
+                details['Abstract'] = dataset['umm'].get('Abstract', "No Abstract available")
+                details['DOI'] = dataset['umm'].get('DOI', {}).get('DOI', "No DOI available")
+                details['Platforms'] = dataset['umm'].get('Platforms', "No Platforms available")
+                details['ScienceKeywords'] = dataset['umm'].get('ScienceKeywords', "No ScienceKeywords available")
+                details['TemporalExtents'] = dataset['umm'].get('TemporalExtents', "No TemporalExtents available")
 
-        dataset_list = []
-        for dataset in datasets[0:10]: # REMOVE THE "[0:10]" TO GET ALL THE DATA
-            dataset_list.append(dataset)
+            dataset_details.append(details)
 
-        return jsonify(dataset_list)
+        return jsonify(dataset_details)
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
