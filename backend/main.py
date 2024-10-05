@@ -13,20 +13,23 @@ def authenticate():
         session = earthaccess.login(strategy="environment")
         return session
     except Exception as e:
-        return str(e)
+        return srt(e)
 
-@app.route('/api/pace-data', methods=['GET'])
+@app.route('/api/cloud-properties-data', methods=['GET'])
 def get_pace_data():
     try:
         session = authenticate()
         if isinstance(session, str):
             return jsonify({"error": "Authentication Failed: " + session}), 500
-        
-        results = earthaccess.search_data(short_name='CLDMSK_L2_VIIRS_SNPP',
-                                            count=1, 
-                                            cloud_hosted=True)
 
-        return jsonify(results)
+        collections = earthaccess.search_datasets(
+            keyword="CLOUD PROPERTIES",
+            cloud_hosted=True,
+            count=4
+        )
+
+        for collection in collections[0:2]:
+            return jsonify(collection)
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
