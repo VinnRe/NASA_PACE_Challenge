@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from flask import Flask, jsonify
+from flask import Blueprint, jsonify
 import earthaccess
 import random
 
@@ -7,7 +7,7 @@ load_dotenv()
 
 earthaccess.login(strategy="environment")
 
-app = Flask(__name__)
+app = Blueprint('phytoplankton', __name__)
 
 def authenticate():
     try:
@@ -16,7 +16,7 @@ def authenticate():
     except Exception as e:
         return str(e)
 
-@app.route('/api/phytoplankton-data', methods=['GET'])
+@app.route('/phytoplankton-data', methods=['GET'])
 def get_phytoplankton_data():
     try:
         session = authenticate()
@@ -54,6 +54,3 @@ def get_phytoplankton_data():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)

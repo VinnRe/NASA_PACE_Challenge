@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
-from flask import Flask, request, jsonify
-from aerosolMetadata import aerosol_metadata
+from flask import Blueprint, request, jsonify
+from .aerosolMetadata import aerosol_metadata
 import earthaccess
 
 # authentication
@@ -8,7 +8,7 @@ load_dotenv()
 
 earthaccess.login(strategy="environment")
 
-app = Flask(__name__)
+app = Blueprint("aerosol", __name__)
 
 def authenticate():
     try:
@@ -17,7 +17,7 @@ def authenticate():
     except Exception as e:
         return str(e)
 
-@app.route('/api/aerosol/definition', methods=['GET'])
+@app.route('/definition', methods=['GET'])
 def aerosol_definition():
     return jsonify({
         "title": "What are Aerosols?",
@@ -25,7 +25,7 @@ def aerosol_definition():
         "types": aerosol_metadata["definition"]["types"]
     })
 
-@app.route('/api/aerosol/effects', methods=['GET'])
+@app.route('/effects', methods=['GET'])
 def aerosol_effects():
     return jsonify({
         "title": "Effects of Aerosols on Climate",
@@ -34,7 +34,7 @@ def aerosol_effects():
     })
 
 # Route for Health Impacts of Aerosols
-@app.route('/api/aerosol/health', methods=['GET'])
+@app.route('/health', methods=['GET'])
 def aerosol_health():
     return jsonify({
         "title": "Health Impacts of Aerosols",
@@ -42,7 +42,7 @@ def aerosol_health():
     })
 
 # Route for Measurement of Aerosols
-@app.route('/api/aerosol/measurement', methods=['GET'])
+@app.route('/measurement', methods=['GET'])
 def aerosol_measurement():
     return jsonify({
         "title": "How are Aerosols Measured?",
@@ -51,7 +51,7 @@ def aerosol_measurement():
         "instrument": aerosol_metadata["measurement"]["instrument"]
     })
 
-@app.route('/api/aerosol', methods=['GET'])
+@app.route('', methods=['GET'])
 def aerosol_general():
     activity = request.args.get('activity')
     
@@ -66,5 +66,3 @@ def aerosol_general():
     else:
         return jsonify({"error": "Invalid activity. Available activities: definition, effects, health, measurement"}), 400
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
