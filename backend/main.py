@@ -15,7 +15,7 @@ def authenticate():
     except Exception as e:
         return str(e)
 
-@app.route('/api/cloud-properties-data', methods=['GET'])
+@app.route('/api/sea-surface-temperature', methods=['GET'])
 def get_pace_data():
     try:
         session = authenticate()
@@ -23,7 +23,7 @@ def get_pace_data():
             return jsonify({"error": "Authentication Failed: " + session}), 500
 
         collections = earthaccess.search_datasets(
-            keyword="CLOUD PROPERTIES",
+            keyword="SEA SURFACE TEMPERATURE",
             cloud_hosted=True,
             count=4
         )
