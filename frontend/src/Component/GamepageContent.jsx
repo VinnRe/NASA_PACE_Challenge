@@ -27,7 +27,7 @@ const GamepageContent = () => {
             </li>
             <li>
               <a href="#" onClick={() => handleContentChange('aerosol')}>
-              <p><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>Plankton</p>-
+              <p><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>Aerosol</p>-
               </a>
             </li>
           </ul>
