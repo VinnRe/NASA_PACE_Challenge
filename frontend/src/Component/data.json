@@ -1,20 +1,19 @@
 {
   "plankton": {
     "theme": "plankton-theme",
-    "content": "Description: PACE will measure different types of phytoplankton offering insights into the diversity and health of marine life. Educational Use: Biodiversity Lessons: Show how different phytoplankton species contribute to ocean health, how they thrive in different conditions, and their role in the marine food web. Climate and Environmental Change: Teach about how environmental changes (temperature, nutrient availability) affect phytoplankton populations and consequently marine ecosystems. Interactive Maps: Develop tools to map phytoplankton diversity across different regions allowing learners to compare ocean zones and their biological richness."
+    "content": "Description: PACE will measure different types of phytoplankton offering insights into the diversity and health of marine life. <a href='https://example.com'>Learn more about plankton</a>"
   },
   "aerosol": {
     "theme": "aerosol-theme",
-    "content": "This is the content about Aerosols."
+    "content": "Aerosols are tiny particles in the atmosphere. <a href='/aerosoldata'>Explore aerosol data</a>"
   },
   "ocean": {
     "theme": "ocean-theme",
-    "content": "This is the content about the Ocean ecosystem."
+    "content": "This is the content about the Ocean ecosystem. <a href='https://example.com/ocean'>Discover more about the ocean</a>"
   },
   "ecosystem": {
     "theme": "ecosystem-theme",
-    "content": "This is the content about Ecosystems."
+    "content": "This is the content about Ecosystems. <a href='https://example.com/ecosystem'>Learn about ecosystems</a>"
   }
 }
-
   

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import contentData from './data.json';
-
-
+import contentData from './data.json'; // Assuming this is your JSON
+import { Link } from 'react-router-dom';
 
 const GamepageContent = () => {
   const [content, setContent] = useState('');
@@ -11,7 +10,8 @@ const GamepageContent = () => {
     const selectedContent = contentData[key];
     if (selectedContent) {
       setContent(selectedContent.content); // Set the content
-      setTheme(selectedContent.theme); // Set the theme
+      setTheme(selectedContent.theme);     // Set the theme
+      console.log("Selected Content:", selectedContent);  // Debugging
     }
   };
 
@@ -27,7 +27,7 @@ const GamepageContent = () => {
             </li>
             <li>
               <a href="#" onClick={() => handleContentChange('aerosol')}>
-              <p><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>Plankton</p>-
+                <p><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>Aerosol</p>
               </a>
             </li>
           </ul>
@@ -36,20 +36,9 @@ const GamepageContent = () => {
         <div className="gamecontent">
           {/* Display welcome message if no content is active */}
           {content ? (
-            <p>{content}</p>
+            <p dangerouslySetInnerHTML={{ __html: content }} />
           ) : (
             <p>Welcome here!</p>
-          )}
-
-          {/* Conditionally rendering the ocean theme elements */}
-          {theme === 'ocean-theme' && (
-            <div className="ocean">
-              {/* Bubble elements for ocean theme */}
-              {[...Array(12)].map((_, index) => (
-                <div className={`bubble bubble--${index + 1}`} key={index}></div>
-              ))}
-              <div id="octocat"></div>
-            </div>
           )}
         </div>
 
@@ -57,12 +46,12 @@ const GamepageContent = () => {
           <ul>
             <li>
               <a href="#" onClick={() => handleContentChange('ocean')}>
-              <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>Ocean</p>
+                <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>Ocean</p>
               </a>
             </li>
             <li>
               <a href="#" onClick={() => handleContentChange('ecosystem')}>
-                 <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ecosystem.png" alt="ecosystem"/>Ecosystem</p>
+                <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ecosystem.png" alt="ecosystem"/>Ecosystem</p>
               </a>
             </li>
           </ul>

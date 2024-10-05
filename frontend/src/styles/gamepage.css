@@ -1,63 +1,81 @@
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.gamepagecontent{
+
+.gamepagecontent {
     padding: 6rem;
     display: flex;
     justify-content: space-between;
 }
-.gamecontent{
 
+.gamecontent {
     border: 2px solid black;
     width: 500px;
-}
-.firstline ul li   {
-    background-color: transparent;
-    text-align: center;
-    margin: 5rem;
-    border: 2px solid black;
-    width: 15rem;
-    height: 5rem;
-    list-style-type: none;
-}
-.secondline ul li  {
-    background-color: transparent;
-    text-align: center;
-    margin: 5rem;
-    border: 2px solid black;
-    width: 15rem;
-    height: 5rem;
-    list-style-type: none;
-    
-}
-.firstline ul li a{
-    text-decoration: none;
-}
-.secondline ul li a {
-    text-decoration: none;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparency for better readability */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.plankton-theme{
-    background-color: green;
+.firstline ul li, .secondline ul li {
+    background-color: transparent;
+    text-align: center;
+    margin: 5rem;
+    border: 2px solid black;
+    width: 15rem;
+    height: auto;
+    list-style-type: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.ocean-theme{
-    background-color: rgb(63, 62, 62);
-    background-image: url('../../public/cool-background.svg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+
+.firstline ul li:hover, .secondline ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
-.ecosystem-theme{
-  background-color: lightgreen;
+
+.firstline ul li a, .secondline ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
-.aerosol-theme{
-    background-color: skyblue;
+
+/* Plankton Theme: Green with wave-like background */
+.plankton-theme {
+    background: linear-gradient(135deg, #2E8B57 30%, #66CDAA 100%);
+    color: white;
 }
+
+/* Ocean Theme: Deep blue with soft gradients to represent depth */
+.ocean-theme {
+   
+        background: linear-gradient(135deg, #1E3C72, #2A5298);
+        color: #ffffff; /* White text for readability */
+    /* White text for readability */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Ecosystem Theme: Vibrant green with softer gradients */
+.ecosystem-theme {
+    background: linear-gradient(135deg, #32CD32 30%, #98FB98 100%);
+    color: #333;
+}
+
+/* Aerosol Theme: Sky blue with soft white cloud-like patterns */
+.aerosol-theme {
+    background: linear-gradient(135deg, #87CEEB 30%, #E0FFFF 100%);
+    color: #333;
+}
+
 .gamepagecontainer {
     height: 100vh;
     transition: background-color 0.5s ease;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-  
