@@ -131,3 +131,4 @@ dist
 
 # python caches
 __pycache__
+ignore_folder
