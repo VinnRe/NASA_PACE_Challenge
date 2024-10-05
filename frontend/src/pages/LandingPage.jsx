@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/landingpage.css'
+import character from '../image/character.png'
 
 const LandingPage = () => {
   return (
@@ -19,8 +20,10 @@ const LandingPage = () => {
         </div>
     </div>
     <div className="bodycontainer">
+      <img src={character} alt="" srcset="" />
+      <div className="bodysubcontainer">
        <h1>The Best place to <br/> <span className='learn' >learn</span> and <span className='play'> play </span> <br/> for kids</h1>
-    </div>
+    </div></div>
     
     </>
   )
