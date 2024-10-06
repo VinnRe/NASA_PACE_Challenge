@@ -31,7 +31,7 @@ Clone the project
   git clone https://github.com/VinnRe/NASA_PACE_Challenge.git
 ```
 
-To run the website
+## To run the website
 
 Go to the project directory
 
@@ -51,7 +51,8 @@ Start the server
   npm run dev
 ```
 
-To run the backend and get the PACE data. We are assuming you are using Python 3.10 or above
+## To run the backend and get the PACE data. 
+We are assuming you are using Python 3.10 or above
 
 ```bash
   cd backend
