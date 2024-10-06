@@ -46,36 +46,43 @@
 
 /* Plankton Theme: Green with wave-like background */
 .plankton-theme {
-    background: linear-gradient(135deg, #2E8B57 30%, #66CDAA 100%);
-    color: white;
+    background-image: url('../assets/plankton.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
 }
 
 /* Ocean Theme: Deep blue with soft gradients to represent depth */
 .ocean-theme {
-   
-        background: linear-gradient(135deg, #1E3C72, #2A5298);
-        color: #ffffff; /* White text for readability */
-    /* White text for readability */
-    position: relative;
-    overflow: hidden;
+    background-image: url('../assets/ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 /* Ecosystem Theme: Vibrant green with softer gradients */
-.ecosystem-theme {
-    background: linear-gradient(135deg, #32CD32 30%, #98FB98 100%);
+.clouds-theme {
+    background-image: url('../assets/clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
 }
 
 /* Aerosol Theme: Sky blue with soft white cloud-like patterns */
 .aerosol-theme {
-    background: linear-gradient(135deg, #87CEEB 30%, #E0FFFF 100%);
+    background-image: url('../assets/aerosol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
 }
 
 .gamepagecontainer {
     height: 100vh;
-    transition: background-color 0.5s ease;
+    transition: background-image 0.5s ease-in-out;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -90,6 +97,13 @@
     /* background-color: var(--navbar-primary-color); */
     padding: 10px;
     color: white;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .logo {
+    margin-right: 20px;
 }
 
 .navbar-left {

@@ -45,13 +45,13 @@ const GamepageContent = () => {
         <div className="secondline">
           <ul>
             <li>
-              <a href="#" onClick={() => handleContentChange('ocean')}>
-                <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>Ocean</p>
+              <a href="#" onClick={() => handleContentChange('ecosystem')}>
+                <p><img width="64" height="64" src="https://img.icons8.com/?size=100&id=117004&format=png&color=000000" alt="clouds"/>Clouds</p>
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => handleContentChange('ecosystem')}>
-                <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ecosystem.png" alt="ecosystem"/>Ecosystem</p>
+              <a href="#" onClick={() => handleContentChange('ocean')}>
+                <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>Ocean</p>
               </a>
             </li>
           </ul>
