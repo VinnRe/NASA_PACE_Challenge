@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/gamepage.css';
 import HomeIcon from '../image/home-icon.png'; // Importing the home icon
+import { IoMdArrowRoundBack } from "react-icons/io"
+import { AiFillHome } from "react-icons/ai"
 
 
 const GameNavbar = () => {
@@ -9,24 +11,19 @@ const GameNavbar = () => {
       {/* Left section with home button, left arrow, and search bar */}
       <div className="navbar-left">
         {/* Home button */}
-        <a href="#">
-          <img src={HomeIcon} alt="Home" className="homeIcon" /> {/* Using imported HomeIcon */}
+        <a href="/">
+          <AiFillHome size={42} className='home-btn-game'/>
         </a>
 
         {/* Left arrow button */}
-        <button>
-          ←
-        </button>
-
-        {/* Search bar */}
-        <div className="search-bar">
-          <input type="text" placeholder="Search Here" />
-        </div>
+        <a href="/gamepage">
+          <IoMdArrowRoundBack size={42} className='back-btn-game'/>
+        </a>
       </div>
 
       {/* Rightmost section with logo */}
       <div className="logo">
-      <h1>Pace Classroom</h1>
+          <h1>Pace Classroom</h1>
       </div>
     </nav>
   );
