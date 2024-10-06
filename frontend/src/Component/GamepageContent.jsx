@@ -53,7 +53,7 @@ const GamepageContent = () => {
               {buttonText && link && (
                 <GamepageButton buttonText={buttonText} link={link} />
               )}
-  
+
               {lessonButton && lessonLink && (
                 <GamepageButton buttonText={lessonButton} link={lessonLink} />
               )}
@@ -61,7 +61,7 @@ const GamepageContent = () => {
           </div>
 
           <div className="secondline-container">
-            <div className="game-btn cloud-btn" onClick={() => handleContentChange('ecosystem')}>
+            <div className="game-btn cloud-btn" onClick={() => handleContentChange('clouds')}>
               <img width="64" height="64" src="https://img.icons8.com/?size=100&id=117004&format=png&color=000000" alt="clouds"/>
               <p>Clouds</p>
             </div>

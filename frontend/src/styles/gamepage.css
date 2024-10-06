@@ -165,6 +165,12 @@
     margin-right: 1rem;
 }
 
+.logo-nav h1{
+    color: #fff; 
+    margin-right: 1rem;
+    filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
+}
+
 .home-btn-game, .back-btn-game {
     transition: 0.3s ease;
     filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));

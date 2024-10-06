@@ -21,7 +21,7 @@
     "lessonButton": "About ocean",
     "lessonLink": "/oceanlesson",
     "buttonText": "Discover more about the ocean",
-    "link": "/"
+    "link": "/oceanexplorer"
   },
   "clouds": {
     "theme": "clouds-theme",

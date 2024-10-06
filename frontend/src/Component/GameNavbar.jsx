@@ -22,8 +22,8 @@ const GameNavbar = () => {
       </div>
 
       {/* Rightmost section with logo */}
-      <div className="logo">
-          <h1>Pace Classroom</h1>
+      <div className="logo-nav">
+          <h1>BlueSphere</h1>
       </div>
     </nav>
   );
