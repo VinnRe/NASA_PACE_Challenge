@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import LandingPage from './pages/LandingPage'; // Import your additional page
+import LandingPage from './pages/LandingPage'; 
 import Phytoplankton from './pages/Phytoplankton';
 import AerosolData from './pages/AerosolData';
 import CloudProperties from './pages/CloudProperties';
