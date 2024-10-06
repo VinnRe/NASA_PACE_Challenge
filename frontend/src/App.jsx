@@ -19,6 +19,7 @@ function App() {
         <Route path="/gamepage" element={<GamePage   />} />
         <Route path="/cloudactivity" element={<CloudActivity   />} />
         <Route path="/oceancard" element={<OceanCard   />} />
+        <Route path="/phytolesson" element={<PythoData />} />
       </Routes>
     </Router>
   );
