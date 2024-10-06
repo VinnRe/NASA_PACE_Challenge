@@ -10,8 +10,6 @@ html {
 }
 
 .container {
-    position: fixed;
-    z-index: 1000;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -27,45 +25,49 @@ html {
     font-style: normal;
 }
 
-.navlink ul{
-    display: flex;
-    padding: 3px;
-    
-   
-}
-.navlink ul li {
-    margin-right: 2rem;
-    list-style-type: none;
-}
-.navlink a {
-    text-decoration: none;
-    color: #6E4EE2;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
 
 .bodycontainer {
-    padding: 5rem;
     height: 100vh;
     background-color: #EBF4F6;  
     text-align: center;
 }
 
 .bodycontainer h1{
- padding-top: 5rem;
-font-size: 5rem;
-font-family: "Rubik", system-ui;
+  font-size: 4rem;
+  font-family: "Rubik", system-ui;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
+.getstartedbutton {
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 5rem;
+}
+.arrowicon {
+    background-color: white;
+    color: #4C3BCF;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    padding: 2px;
+    margin-left: 10px; /* Adds space between text and icon */
+} 
+.bodysubcontainer a {
+    display: inline-flex; /* Align text and icon in a row */
+    align-items: center;  /* Vertically align items */
+    justify-content: center;
+    border-radius: 10rem;
+    background-color: #6E4EE2;
+    padding: .6rem 1rem; /* Added padding to make button look better */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none; /* Removes underline from the link */
+}
 .learn {
-   
     color: #4C3BCF;
     font-family: "Shadows Into Light", cursive;
-  font-weight: 500;
-  font-style: normal;
+    font-weight: 500;
+    font-style: normal;
 }
 .play {
     color: #EBC256;
@@ -101,10 +103,12 @@ font-family: "Rubik", system-ui;
 .thirdcontainer {
     height: 100vh;
     background-color: #EBF4F6;
-    
+    padding: 2rem;
+    text-align: center;
 }
+
 .thirdcontainer h1 {
-    font-size: 3rem ;
+    font-size: 3rem;
     padding: 2rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -119,136 +123,167 @@ font-family: "Rubik", system-ui;
     font-style: normal;
 }
 
-.boxconatainer{
+/* Box container styling */
+.boxconatainer {
     display: flex;
     justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.boxone,.boxtwo,.boxthree{
+/* General box styling */
+.boxone, .boxtwo, .boxthree {
     height: 20rem;
     width: 20rem;
-    border-radius: 10px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 11px 11px 22px #c8cfd1, -11px -11px 22px #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boxone {
-    display: flex;
-    justify-content: center;
-    position: relative;
     background-color: #D8C3F7;
-    border-radius: 35px;
-    box-shadow:  11px 11px 22px #c8cfd1,
-                 -11px -11px 22px #ffffff;
 }
-.boxtwo{
+
+.boxtwo {
     background-color: #6E4EE2;
-    border-radius: 35px;
-    box-shadow:  11px 11px 22px #c8cfd1,
-                 -11px -11px 22px #ffffff;
 }
+
 .boxthree {
     background-color: #EBC256;
-    border-radius: 35px;
-    box-shadow:  11px 11px 22px #c8cfd1,
-                 -11px -11px 22px #ffffff;
 }
-.boxone h1{
-    margin-top: 7rem;
+
+/* Box hover effects */
+.boxone:hover, .boxtwo:hover, .boxthree:hover {
+    transform: translateY(-10px);
+    box-shadow: 11px 11px 30px #c8cfd1, -11px -11px 30px #ffffff;
+}
+
+/* Styling for headings inside boxes */
+.boxone h1, .boxtwo h1, .boxthree h1 {
     font-family: "Rubik", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 10;
-    font-size: 2rem;
-    font-style: normal;
-}
-.ball {
-    margin: 2rem 0 0 10rem;
-    z-index: 1; /* Higher stacking order */
-    position: absolute; /* Absolute positioning */
-    border-radius: 50%; /* Circular shape */
-    width: 50px; /* Size of the ball */
-    height: 50px; /* Size of the ball */
-    background-color: orange; /* Ball color */
-    box-shadow: 0 0 35px 5px yellow, 0 0 25px 10px yellow inset; /* Shadow effects */
-    animation: float 2s ease-in-out infinite; /* Animation */
-}
-
-/* Floating animation */
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-.test {
-    font-size: 15px;
-    font-family: "Rubik", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 10;
-    font-style: normal;
-}
-
-.boxtwo h1 {
-    margin-top: 7rem;
-    font-family: "Rubik", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 10;
-    font-size: 2rem;
-    font-style: normal;
-}
-
-.boxthree h1{
-    margin-top: 7rem;
-    font-family: "Rubik", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 10;
-    font-size: 2rem;
-    font-style: normal;
-}
-
-footer {
-    background-color: #6E4EE2; /* Light background */
-    color: black; /* Dark text */
-    padding: 20px 40px;
+    font-weight: 500;
+    font-size: 1.5rem;
     text-align: center;
-    font-family: "Rubik", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal; /* Centered text */
-  }
-  
-  .footer-container {
-    max-width: 600px; /* Narrower width for a minimalist look */
-    margin: 0 auto; /* Centered container */
-  }
-  
-  h2 {
-    margin-bottom: 10px;
-    font-size: 1.5em; /* Slightly larger font for heading */
-    font-weight: normal; /* Lighter font weight */
-  }
-  
-  p {
-    margin: 5px 0; /* Spacing for paragraphs */
-    font-size: 0.9em;
-     /* Smaller font size */
-  }
-  
-  a {
-    color: white; /* Blue color for links */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
-  .social-media {
-    margin: 10px 0; /* Spacing around social links */
-  }
-  
-  .social-media a {
-    margin: 0 10px; /* Space between social links */
-    font-size: 0.9em; /* Consistent font size */
-  }
+    margin-bottom: 1rem;
+}
+
+/* Text inside box one */
+.boxone .test {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Icon Design */
+
+/* General icon styling */
+.gameicon, .boxtwo .smileicon, .boxone .quizicon {
+    font-size: 4rem; /* Large size to make them stand out */
+    margin-bottom: 1rem; /* Space between the icon and the text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Icon hover effect */
+.gameicon:hover, .ball:hover, .smileicon:hover, .quizicon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+}
+
+/* Individual icon colors to match the theme */
+.gameicon {
+    color: #4C3BCF; /* Bright color for games */
+}
+
+.boxtwo .smileicon {
+    color: #FFF; /* White smiley to contrast with purple box */
+}
+
+/* Specific styling for quiz icon */
+.quizicon {
+    color: #FF6347; /* Tomato red to stand out */
+    font-size: 4rem; /* Consistent with other icons */
+    margin-bottom: 1rem;
+}
+/* Footer container styling */
+.nasa-footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 4rem 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-description {
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-right h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.social-icons a {
+    color: #bbb;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
   
   
 
