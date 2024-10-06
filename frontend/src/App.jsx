@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import LandingPage from './pages/LandingPage'; // Import your additional page
+import LandingPage from './pages/LandingPage'; 
 import Phytoplankton from './pages/Phytoplankton';
 import AerosolData from './pages/AerosolData';
 import CloudProperties from './pages/CloudProperties';
 import GamePage from './pages/GamePage';
 import CloudActivity from './pages/CloudActivity';
 import OceanExplorers from './pages/OceanExplorers';
-import OceanCard from './pages/OceanCard';
+import PhytoData from './pages/Lesson Material/Pytho';
+import Aerosol from './pages/Lesson Material/Aerosol';
+import Ocean from './pages/Lesson Material/Ocean';
+import Clouds from './pages/Lesson Material/Clouds';
 
 function App() {
   return (
@@ -20,8 +23,10 @@ function App() {
         <Route path="/gamepage" element={<GamePage   />} />
         <Route path="/cloudactivity" element={<CloudActivity   />} />
         <Route path="/oceanexplorer" element={<OceanExplorers  />} />
-        <Route path="/oceancard" element={<OceanCard   />} />
-        <Route path="/phytolesson" element={<PythoData />} />
+        <Route path="/phytolesson" element={<PhytoData />} />
+        <Route path="/aerosollesson" element={<Aerosol />} />
+        <Route path="/oceanlesson" element={<Ocean />} />
+        <Route path="/cloudslesson" element={<Clouds />} />
       </Routes>
     </Router>
   );
