@@ -12,7 +12,7 @@
     "content": "This is the content about the Ocean ecosystem. <a href='https://example.com/ocean'>Discover more about the ocean</a>"
   },
   "ecosystem": {
-    "theme": "ecosystem-theme",
+    "theme": "clouds-theme",
     "content": "This is the content about Ecosystems. <a href='https://example.com/ecosystem'>Learn about ecosystems</a>"
   }
 }
