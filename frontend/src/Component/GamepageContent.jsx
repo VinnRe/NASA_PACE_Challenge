@@ -6,21 +6,26 @@ import GamepageButton from './GamepageButton';
 const GamepageContent = () => {
   const [theme, setTheme] = useState('');
   const [description, setDescription] = useState('');
+  const [lessonButton, setLessonButton] = useState('');
+  const [lessonLink, setLessonLink] = useState('');
   const [buttonText, setButtonText] = useState('');
   const [link, setLink] = useState('');
 
   const handleContentChange = (key) => {
     const selectedContent = contentData[key];
     if (selectedContent) {
-      // Update the state for theme, buttonText, and link
       setTheme(selectedContent.theme);
       setDescription(selectedContent.description);
+      setLessonButton(selectedContent.lessonButton);
+      setLessonLink(selectedContent.lessonLink);
       setButtonText(selectedContent.buttonText);
       setLink(selectedContent.link);
     } else {
       // Clear if no content is selected
       setTheme('');
       setDescription('');
+      setLessonButton('');
+      setLessonLink('');
       setButtonText('');
       setLink('');
     }
@@ -43,13 +48,14 @@ const GamepageContent = () => {
           </div>
 
           <div className="gamecontent">
-            {buttonText && description && link ? (
-              <div className='lesson-content'>
-                <p>{description}</p>
-                <GamepageButton buttonText={buttonText} link={link} />
-              </div>
-            ) : (
-              <p>Welcome here!</p>
+            {description && <p>{description}</p>}
+
+            {buttonText && link && (
+              <GamepageButton buttonText={buttonText} link={link} />
+            )}
+
+            {lessonButton && lessonLink && (
+              <GamepageButton buttonText={lessonButton} link={lessonLink} />
             )}
           </div>
 

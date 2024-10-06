@@ -10,32 +10,25 @@
   "aerosol": {
     "theme": "aerosol-theme",
     "description": "Aerosols are tiny particles in the atmosphere.",
-    "lessonButton": "About plankton",
-    "lessonLink": "/phytolesson",
+    "lessonButton": "About aerosol",
+    "lessonLink": "/aerosollesson",
     "buttonText": "Explore aerosol data",
     "link": "/aerosoldata"
   },
   "ocean": {
     "theme": "ocean-theme",
     "description": "This is the content about the Ocean ecosystem.",
-    "lessonButton": "About plankton",
-    "lessonLink": "/phytolesson",
+    "lessonButton": "About ocean",
+    "lessonLink": "/oceanlesson",
     "buttonText": "Discover more about the ocean",
     "link": "/"
   },
-  "ecosystem": {
-<<<<<<< HEAD
-    "theme": "ecosystem-theme",
-    "content": "This is the content about Ecosystems. <a href='/'>Learn about ecosystems</a>",
-    "theme": "clouds-theme",
-    "content": "This is the content about Ecosystems. <a href='https://example.com/ecosystem'>Learn about ecosystems</a>"
-=======
+  "clouds": {
     "theme": "clouds-theme",
     "description": "This is the content about Ecosystems.",
-    "lessonButton": "About plankton",
-    "lessonLink": "/phytolesson",
+    "lessonButton": "About clouds",
+    "lessonLink": "/cloudslesson",
     "buttonText": "Learn about ecosystems",
     "link": "/cloudactivity"
->>>>>>> 19de088520785f298949eae07351f7c1afcb5d6c
   }
 }

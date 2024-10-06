@@ -6,11 +6,11 @@ import AerosolData from './pages/AerosolData';
 import CloudProperties from './pages/CloudProperties';
 import GamePage from './pages/GamePage';
 import CloudActivity from './pages/CloudActivity';
-<<<<<<< HEAD
 import OceanExplorers from './pages/OceanExplorers';
-=======
-import OceanCard from './pages/OceanCard';
->>>>>>> 19de088520785f298949eae07351f7c1afcb5d6c
+import PhytoData from './pages/Lesson Material/Pytho';
+import Aerosol from './pages/Lesson Material/Aerosol';
+import Ocean from './pages/Lesson Material/Ocean';
+import Clouds from './pages/Lesson Material/Clouds';
 
 function App() {
   return (
@@ -22,15 +22,11 @@ function App() {
         <Route path="/cloudproperties" element={<CloudProperties />} />
         <Route path="/gamepage" element={<GamePage   />} />
         <Route path="/cloudactivity" element={<CloudActivity   />} />
-<<<<<<< HEAD
         <Route path="/oceanexplorer" element={<OceanExplorers  />} />
-=======
-        <Route path="/oceancard" element={<OceanCard   />} />
-<<<<<<< HEAD
-        <Route path="/phytolesson" element={<PythoData />} />
-=======
->>>>>>> 19de088520785f298949eae07351f7c1afcb5d6c
->>>>>>> 47b1241568a37593cbcbd1a5b5f6dc2b52535c82
+        <Route path="/phytolesson" element={<PhytoData />} />
+        <Route path="/aerosollesson" element={<Aerosol />} />
+        <Route path="/oceanlesson" element={<Ocean />} />
+        <Route path="/cloudslesson" element={<Clouds />} />
       </Routes>
     </Router>
   );
