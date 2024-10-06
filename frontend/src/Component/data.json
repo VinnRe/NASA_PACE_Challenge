@@ -1,19 +1,26 @@
 {
   "plankton": {
     "theme": "plankton-theme",
-    "content": "<a href='/phytoplankton'>Learn more about plankton</a>"
+    "description": "This is a description for plankton",
+    "buttonText": "Learn more about plankton",
+    "link": "/phytoplankton"
   },
   "aerosol": {
     "theme": "aerosol-theme",
-    "content": "Aerosols are tiny particles in the atmosphere. <a href='/aerosoldata'>Explore aerosol data</a>"
+    "description": "Aerosols are tiny particles in the atmosphere.",
+    "buttonText": "Explore aerosol data",
+    "link": "/aerosoldata"
   },
   "ocean": {
     "theme": "ocean-theme",
-    "content": "This is the content about the Ocean ecosystem. <a href='/'>Discover more about the ocean</a>"
+    "description": "This is the content about the Ocean ecosystem.",
+    "buttonText": "Discover more about the ocean",
+    "link": "/"
   },
   "ecosystem": {
     "theme": "clouds-theme",
-    "content": "This is the content about Ecosystems. <a href='https://example.com/ecosystem'>Learn about ecosystems</a>"
+    "description": "This is the content about Ecosystems.",
+    "buttonText": "Learn about ecosystems",
+    "link": "/cloudactivity"
   }
 }
-  
