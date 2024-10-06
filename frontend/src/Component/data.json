@@ -24,11 +24,18 @@
     "link": "/"
   },
   "ecosystem": {
+<<<<<<< HEAD
+    "theme": "ecosystem-theme",
+    "content": "This is the content about Ecosystems. <a href='/'>Learn about ecosystems</a>",
+    "theme": "clouds-theme",
+    "content": "This is the content about Ecosystems. <a href='https://example.com/ecosystem'>Learn about ecosystems</a>"
+=======
     "theme": "clouds-theme",
     "description": "This is the content about Ecosystems.",
     "lessonButton": "About plankton",
     "lessonLink": "/phytolesson",
     "buttonText": "Learn about ecosystems",
     "link": "/cloudactivity"
+>>>>>>> 19de088520785f298949eae07351f7c1afcb5d6c
   }
 }
