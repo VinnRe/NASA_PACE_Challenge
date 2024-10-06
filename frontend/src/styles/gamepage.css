@@ -36,17 +36,22 @@
     border: 2px solid black;
     width: 100%;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Transparency for better readability */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .lesson-content {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.gamecontent-btn-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .firstline-container, .secondline-container {
