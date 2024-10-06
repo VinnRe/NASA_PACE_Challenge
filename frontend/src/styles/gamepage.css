@@ -148,6 +148,7 @@
 }
 
 .navbar-left a {
+    color: white;
     margin-right: 1rem;
 }
 
@@ -157,6 +158,6 @@
 }
 
 .home-btn-game:hover, .back-btn-game:hover {
-    color: var(--navbar-dark-color); /*PLACE HOLDER COLOR*/
+    color: var(--navbar-dark-color);
     transform: scale(1.3);
 }
