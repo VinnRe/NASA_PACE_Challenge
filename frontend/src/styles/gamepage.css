@@ -97,6 +97,13 @@
     /* background-color: var(--navbar-primary-color); */
     padding: 10px;
     color: white;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .logo {
+    margin-right: 20px;
 }
 
 .navbar-left {
