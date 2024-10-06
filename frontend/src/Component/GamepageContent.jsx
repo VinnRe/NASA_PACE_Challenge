@@ -38,7 +38,7 @@ const GamepageContent = () => {
           <div className="firstline-container">
             <div className="game-btn plankton-btn" onClick={() => handleContentChange('plankton')}>
               <img width="64" height="64" src="https://img.icons8.com/ios-filled/50/plankton.png" alt="plankton"/>
-              <p>Phytoplankton</p>
+              <p>Plankton</p>
             </div>
 
             <div className="game-btn aero-btn" onClick={() => handleContentChange('aerosol')}>
@@ -49,14 +49,15 @@ const GamepageContent = () => {
 
           <div className="gamecontent">
             {description && <p>{description}</p>}
-
-            {buttonText && link && (
-              <GamepageButton buttonText={buttonText} link={link} />
-            )}
-
-            {lessonButton && lessonLink && (
-              <GamepageButton buttonText={lessonButton} link={lessonLink} />
-            )}
+            <div className="gamecontent-btn-container">
+              {buttonText && link && (
+                <GamepageButton buttonText={buttonText} link={link} />
+              )}
+  
+              {lessonButton && lessonLink && (
+                <GamepageButton buttonText={lessonButton} link={lessonLink} />
+              )}
+            </div>
           </div>
 
           <div className="secondline-container">
