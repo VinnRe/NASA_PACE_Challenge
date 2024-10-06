@@ -1,17 +1,28 @@
 import React, { useState } from 'react';
-import contentData from './data.json'; // Assuming this is your JSON
+import contentData from './data.json'; 
 import { Link } from 'react-router-dom';
+import GamepageButton from './GamepageButton';
 
 const GamepageContent = () => {
-  const [content, setContent] = useState('');
   const [theme, setTheme] = useState('');
+  const [description, setDescription] = useState('');
+  const [buttonText, setButtonText] = useState('');
+  const [link, setLink] = useState('');
 
   const handleContentChange = (key) => {
     const selectedContent = contentData[key];
     if (selectedContent) {
-      setContent(selectedContent.content); // Set the content
-      setTheme(selectedContent.theme);     // Set the theme
-      console.log("Selected Content:", selectedContent);  // Debugging
+      // Update the state for theme, buttonText, and link
+      setTheme(selectedContent.theme);
+      setDescription(selectedContent.description);
+      setButtonText(selectedContent.buttonText);
+      setLink(selectedContent.link);
+    } else {
+      // Clear if no content is selected
+      setTheme('');
+      setDescription('');
+      setButtonText('');
+      setLink('');
     }
   };
 
@@ -20,45 +31,36 @@ const GamepageContent = () => {
       <div className="game-card-container">
         <div className="gamepagecontent">
           <div className="firstline-container">
-            <div className="firstline">
-              <ul>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('plankton')}>
-                    <p><img width="64" height="64" src="https://img.icons8.com/ios-filled/50/plankton.png" alt="plankton"/>Plankton</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('aerosol')}>
-                  <p><img width="64" height="64" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>Aerosol</p>
-                  </a>
-                </li>
-              </ul>
+            <div className="game-btn plankton-btn" onClick={() => handleContentChange('plankton')}>
+              <img width="64" height="64" src="https://img.icons8.com/ios-filled/50/plankton.png" alt="plankton"/>
+              <p>Phytoplankton</p>
+            </div>
+
+            <div className="game-btn aero-btn" onClick={() => handleContentChange('aerosol')}>
+              <img width="64" height="64" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>
+              <p>Aerosol</p>
             </div>
           </div>
 
           <div className="gamecontent">
-            {/* Display welcome message if no content is active */}
-            {content ? (
-              <p dangerouslySetInnerHTML={{ __html: content }} />
+            {buttonText && description && link ? (
+              <div className='lesson-content'>
+                <p>{description}</p>
+                <GamepageButton buttonText={buttonText} link={link} />
+              </div>
             ) : (
               <p>Welcome here!</p>
             )}
           </div>
 
           <div className="secondline-container">
-            <div className="secondline">
-              <ul>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('ecosystem')}>
-                    <p><img width="64" height="64" src="https://img.icons8.com/?size=100&id=117004&format=png&color=000000" alt="clouds"/>Clouds</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('ocean')}>
-                    <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>Ocean</p>
-                  </a>
-                </li>
-              </ul>
+            <div className="game-btn cloud-btn" onClick={() => handleContentChange('ecosystem')}>
+              <img width="64" height="64" src="https://img.icons8.com/?size=100&id=117004&format=png&color=000000" alt="clouds"/>
+              <p>Clouds</p>
+            </div>
+            <div className="game-btn ocean-btn" onClick={() => handleContentChange('ocean')}>
+              <img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>
+              <p>Ocean</p>
             </div>
           </div>
         </div>
