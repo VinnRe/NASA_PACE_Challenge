@@ -6,6 +6,7 @@ import AerosolData from './pages/AerosolData';
 import CloudProperties from './pages/CloudProperties';
 import GamePage from './pages/GamePage';
 import CloudActivity from './pages/CloudActivity';
+import OceanExplorers from './pages/OceanExplorers';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/cloudproperties" element={<CloudProperties />} />
         <Route path="/gamepage" element={<GamePage   />} />
         <Route path="/cloudactivity" element={<CloudActivity   />} />
+        <Route path="/oceanexplorer" element={<OceanExplorers  />} />
       </Routes>
     </Router>
   );

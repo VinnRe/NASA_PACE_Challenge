@@ -12,13 +12,10 @@
     "content": "This is the content about the Ocean ecosystem. <a href='/'>Discover more about the ocean</a>"
   },
   "ecosystem": {
-<<<<<<< HEAD
     "theme": "ecosystem-theme",
-    "content": "This is the content about Ecosystems. <a href='/'>Learn about ecosystems</a>"
-=======
+    "content": "This is the content about Ecosystems. <a href='/'>Learn about ecosystems</a>",
     "theme": "clouds-theme",
     "content": "This is the content about Ecosystems. <a href='https://example.com/ecosystem'>Learn about ecosystems</a>"
->>>>>>> 7659cd4b071a749e21fbad0e0804c54de12390e0
   }
 }
   
