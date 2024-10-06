@@ -87,7 +87,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--navbar-primary-color);
+    /* background-color: var(--navbar-primary-color); */
     padding: 10px;
     color: white;
 }
