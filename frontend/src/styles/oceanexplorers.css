@@ -1,0 +1,481 @@
+
+
+h1 {
+    font-size: 2.5em;
+    color: #FF4500; /* Orange */
+}
+
+h2 {
+    font-size: 2em;
+    color: #008080; /* Teal */
+    margin: 20px 0;
+}
+
+.oceancontainer {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro {
+    font-size: 1.2em;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px dashed #FF4500; /* Orange */
+    border-radius: 10px;
+    background-color: #f0f8ff; /* Light blue */
+}
+
+.button {
+    background-color: #FF6347; /* Tomato */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button:hover {
+    background-color: #FF4500; /* Darker Tomato */
+}
+
+.fun-facts {
+    margin: 20px 0;
+    font-size: 1.1em;
+    background-color: #e0f7fa; /* Light Cyan */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+/* Styling for icons */
+.wave-icon {
+    color: #1E90FF; /* Dodger Blue */
+}
+
+.lightbulb-icon {
+    color: #FFD700; /* Gold */
+}
+
+.fish-icon {
+    color: #FF4500; /* Orange */
+}
+/* Phytoplankton Section */
+.phytoplankton-section {
+background-color: #f0fff0; /* Light green */
+border-radius: 15px;
+padding: 20px;
+margin: 20px 0;
+width: 100%;
+text-align: center;
+}
+
+.phytoplankton-section h2 {
+font-size: 2em;
+color: #2e8b57; /* Sea green */
+margin-bottom: 15px;
+}
+
+.phytoplankton-section .content p {
+font-size: 1.2em;
+color: #333;
+}
+
+.phytoplankton-section .content ul {
+list-style: none;
+padding: 0;
+}
+
+.phytoplankton-section .content ul li {
+font-size: 1.2em;
+color: #2e8b57;
+margin: 10px 0;
+display: flex;
+align-items: center;
+}
+
+.phytoplankton-section .content ul li .icon {
+font-size: 1.5em;
+margin-right: 10px;
+}
+
+.phytoplankton-section .quiz {
+margin-top: 30px;
+}
+
+.phytoplankton-section .quiz h3 {
+font-size: 1.5em;
+color: #ff6347; /* Tomato */
+}
+
+.phytoplankton-section .quiz p {
+font-size: 1.2em;
+margin-bottom: 20px;
+}
+
+.phytoplankton-section .quiz-btn {
+background-color: #ff4500; /* OrangeRed */
+color: white;
+padding: 10px 20px;
+margin: 10px;
+font-size: 1.2em;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.phytoplankton-section .quiz-btn:hover {
+background-color: #ff6347; /* Tomato */
+}
+
+.quiz-result {
+font-size: 1.3em;
+color: #2e8b57; /* Sea green */
+margin-top: 20px;
+font-weight: bold;
+}
+
+/* NASA Ocean Projects Section */
+.nasa-ocean-projects {
+background-color: #f0f8ff; /* AliceBlue for a soft ocean theme */
+border-radius: 15px;
+padding: 20px;
+margin: 20px 0;
+width: 100%;
+text-align: center;
+}
+
+.nasa-ocean-projects h2 {
+font-size: 2em;
+color: #1e90ff; /* DodgerBlue for NASA theme */
+margin-bottom: 15px;
+}
+
+.project-overview, .key-terms, .quiz {
+margin: 20px 0;
+}
+
+.nasa-ocean-projects .description p, .key-terms ul li {
+font-size: 1.2em;
+color: #333;
+}
+
+.nasa-ocean-projects .highlight {
+background-color: #fdd835; /* Yellow for highlight */
+padding: 0 5px;
+border-radius: 5px;
+font-weight: bold;
+}
+
+.key-terms ul {
+list-style: none;
+padding: 0;
+}
+
+.key-terms ul li {
+font-size: 1.2em;
+color: #2e8b57; /* Sea green */
+margin: 10px 0;
+display: flex;
+align-items: center;
+}
+
+.key-terms ul li .icon {
+font-size: 1.5em;
+margin-right: 10px;
+}
+
+.nasa-ocean-projects .quiz h3 {
+font-size: 1.5em;
+color: #ff6347; /* Tomato for quiz header */
+}
+
+.nasa-ocean-projects .quiz p {
+font-size: 1.2em;
+margin-bottom: 20px;
+}
+
+.nasa-ocean-projects .quiz-btn {
+background-color: #ff4500; /* OrangeRed for buttons */
+color: white;
+padding: 10px 20px;
+margin: 10px;
+font-size: 1.2em;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.nasa-ocean-projects .quiz-btn:hover {
+background-color: #ff6347; /* Tomato on hover */
+}
+
+.quiz-result {
+font-size: 1.3em;
+color: #1e90ff; /* DodgerBlue for results */
+margin-top: 20px;
+font-weight: bold;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+
+#clivec-section {
+background-color: #e0f7fa; /* Light blue background */
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+font-family: 'Comic Sans MS', cursive, sans-serif; /* Kid-friendly font */
+margin: 20px 0; /* Add margin for spacing */
+}
+
+h2 {
+color: #00796b; /* Dark teal color */
+font-size: 36px; /* Increased font size */
+}
+
+.content {
+margin: 15px 0; /* Space between content and button */
+}
+
+p {
+color: #004d40; /* Dark green color */
+font-size: 20px; /* Increased font size */
+margin: 10px 0;
+}
+
+button {
+background-color: #00796b; /* Dark teal button */
+color: white;
+border: none;
+padding: 12px 18px; /* Increased padding */
+border-radius: 5px;
+cursor: pointer;
+font-size: 22px; /* Increased button font size */
+transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
+}
+
+button:hover {
+background-color: #004d40; /* Dark green hover effect */
+transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.icons {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.icon {
+font-size: 50px; /* Adjust icon size to be larger */
+margin: 0 15px; /* Space between icons */
+transition: transform 0.3s; /* Smooth scaling */
+}
+
+.icon:hover {
+transform: scale(1.2); /* Scale up on hover */
+}
+
+
+
+
+h2 {
+font-size: 36px; /* Large heading for activities */
+text-align: center; /* Centered heading */
+}
+
+.activity {
+border: 2px solid #00796b; /* Border around the activity */
+border-radius: 10px; /* Rounded corners */
+padding: 20px; /* Padding inside the activity box */
+margin: 20px auto; /* Center the activity box */
+background-color: #8ecdf1; /* White background for activity */
+max-width: 1200px; /* Maximum width of the activity box */
+box-shadow: 0 4px 8px rgb(118, 159, 205); /* Shadow for a 3D effect */
+}
+
+h3 {
+font-size: 28px; /* Size for activity title */
+color: #004d40; /* Dark teal color for the title */
+}
+
+h4 {
+font-size: 24px; /* Subheading size */
+color: #00796b; /* Teal color for subheadings */
+}
+
+.icons {
+display: flex; /* Flexbox for icons */
+justify-content: space-around; /* Space around icons */
+margin: 10px 0; /* Margin above and below icons */
+}
+
+.icon {
+font-size: 36px; /* Size for icons */
+margin: 5px; /* Margin around icons */
+}
+
+ul {
+list-style-type: none; /* Remove default list styling */
+padding: 0; /* Remove padding */
+}
+
+button {
+background-color: #00796b; /* Button color */
+color: white; /* Button text color */
+padding: 10px 20px; /* Padding inside button */
+border: none; /* No border */
+border-radius: 5px; /* Rounded corners */
+font-size: 20px; /* Button text size */
+cursor: pointer; /* Pointer cursor on hover */
+margin-top: 20px; /* Space above button */
+}
+
+button:hover {
+background-color: #004d40; /* Darker button color on hover */
+}
+
+#timer {
+font-size: 32px; /* Timer font size */
+color: #e53935; /* Red color for urgency */
+margin-top: 20px; /* Space above timer */
+font-weight: bold; /* Bold font */
+text-align: center; /* Center the timer text */
+}
+
+.hidden {
+display: none; /* Hide elements with this class */
+}
+
+
+#phytoplankton-art-section {
+font-family: 'Comic Sans MS', cursive, sans-serif; /* Kid-friendly font */
+background-color: #e0f7fa; /* Light blue background */
+color: #333; /* Dark gray text for readability */
+padding: 20px; /* Padding around the section */
+}
+
+.activity-title {
+font-size: 36px; /* Large heading for activities */
+text-align: center; /* Centered heading */
+}
+
+.activity-content {
+border: 2px solid #00796b; /* Border around the activity */
+border-radius: 10px; /* Rounded corners */
+padding: 20px; /* Padding inside the activity box */
+margin: 20px auto; /* Center the activity box */
+background-color: #97e0e9; /* White background for activity */
+max-width: 1400px; /* Maximum width of the activity box */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+}
+
+.what-you-need-title, .instructions-title {
+font-size: 28px; /* Size for titles */
+color: #004d40; /* Dark teal color for the title */
+}
+
+.what-you-need-list, .instructions-list {
+list-style-type: none; /* Remove default list styling */
+padding: 0; /* Remove padding */
+}
+
+.item, .instruction-item {
+font-size: 20px; /* Size for list items */
+}
+
+.start-button {
+background-color: #00796b; /* Button color */
+color: white; /* Button text color */
+padding: 10px 20px; /* Padding inside button */
+border: none; /* No border */
+border-radius: 5px; /* Rounded corners */
+font-size: 20px; /* Button text size */
+cursor: pointer; /* Pointer cursor on hover */
+margin-top: 20px; /* Space above button */
+}
+
+.start-button:hover {
+background-color: #004d40; /* Darker button color on hover */
+}
+
+#phytoplankton-timer { /* Updated to match unique timer ID */
+font-size: 32px; /* Timer font size */
+color: #e53935; /* Red color for urgency */
+margin-top: 20px; /* Space above timer */
+font-weight: bold; /* Bold font */
+text-align: center; /* Center the timer text */
+}
+
+.hidden {
+display: none; /* Hide elements with this class */
+}
+
+
+#conclusion-section {
+font-family: 'Comic Sans MS', cursive, sans-serif; /* Kid-friendly font */
+background-color: #e1f5fe; /* Light blue background */
+color: #333; /* Dark gray text for readability */
+padding: 20px; /* Padding around the section */
+}
+
+.conclusion-title {
+font-size: 36px; /* Large heading for conclusion */
+text-align: center; /* Centered heading */
+}
+
+.conclusion-content {
+border: 2px solid #0288d1; /* Border around the conclusion */
+border-radius: 10px; /* Rounded corners */
+padding: 20px; /* Padding inside the conclusion box */
+margin: 20px auto; /* Center the conclusion box */
+background-color: #8ce6f2; /* White background for conclusion */
+max-width: 1200px; /* Maximum width of the conclusion box */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+}
+
+.conclusion-text {
+font-size: 24px; /* Size for conclusion text */
+margin: 10px 0; /* Margin between paragraphs */
+}
+
+.action-button {
+background-color: #0288d1; /* Button color */
+color: white; /* Button text color */
+padding: 10px 20px; /* Padding inside button */
+border: none; /* No border */
+border-radius: 5px; /* Rounded corners */
+font-size: 20px; /* Button text size */
+cursor: pointer; /* Pointer cursor on hover */
+margin-top: 20px; /* Space above button */
+}
+
+.action-button:hover {
+background-color: #01579b; /* Darker button color on hover */
+}
+
+#action-timer { /* Updated to match unique timer ID */
+font-size: 32px; /* Timer font size */
+color: #e53935; /* Red color for urgency */
+margin-top: 20px; /* Space above timer */
+font-weight: bold; /* Bold font */
+text-align: center; /* Center the timer text */
+}
+
+.hidden {
+display: none; /* Hide elements with this class */
+}

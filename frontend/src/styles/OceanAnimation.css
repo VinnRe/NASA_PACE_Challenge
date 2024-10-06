@@ -1,0 +1,118 @@
+
+  html {
+    overflow: hidden;
+  }
+  
+  
+  
+  .submarine-container {
+    width: 22vh;
+    height: 13vh;
+  /*   animation: sub-bob 2s ease-out infinite; */
+    animation: sub-explore 20s linear infinite;
+    will-change: transform;
+  }
+  
+  .s-top {
+    background-color: yellow;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 3vh 3vh 0 0;
+    margin-left: 6vh;
+    transform: translateY(0.5vh);
+  }
+  
+  .yellow-submarine {
+    background-color: yellow;
+    width: 22vh;
+    height: 6vh;
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .s-window {
+    background-color: skyblue;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    border: 0.75vh solid orange;
+    margin: 0 auto;
+    transform: translateY(1vh);
+  }
+  
+  .s-windows-small {
+    width: 15vh;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-1vh);
+  }
+  
+  .s-window-small {
+    background-color: skyblue;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    border: 0.75vh solid orange;
+  }
+  
+  .s-light-bulb {
+    background-color: yellow;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 0 50% 50% 0;
+    border-left: 0.5vh solid orange;
+    transform: translateX(-10vh);
+  }
+  
+  .s-light {
+    background: linear-gradient(90deg,transparent,rgba(250,250,250,.75));
+    width: 12vh;
+    height: 6vh;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius:  10vh 3vh;
+    border-bottom-right-radius: 10vh 3vh;
+    transform: translateX(-10.5vh);
+  }
+  
+  .s-propellers {
+    width: 1vh;
+    height: 6vh;
+    transform: translateX(1vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: propeller-spin 0.5s linear infinite;
+    will-change: transform;
+  }
+  
+  .s-propeller {
+    background-color: orange;
+    width: 1vh;
+    height: 2.5vh;
+    border-radius: 50%;
+  }
+
+  @keyframes sub-bob {
+    0% {transform: translateY(0vh) rotateZ(0deg);}
+    25% {transform: translateY(2vh)rotateZ(-2deg);}
+    50% {transform: translateY(0vh) rotateZ(0deg);}
+    75% {transform: translateY(2vh)rotateZ(4deg);}
+    100% {transform: translateY(0vh)rotateZ(0deg);}
+  }
+  
+  @keyframes propeller-spin {
+    to {transform: translateX(1vh) rotateX(180deg);}
+  }
+  
+  @keyframes sub-explore {
+    0% {transform: translate(110vw,20vh);}
+    40% {transform: translate(-20vw,50vh);}
+    41% {transform: translate(-40vw,80vh);}
+    50% {transform: translate(-40vw,80vh) rotateY(180deg);}
+    80% {transform: translate(50vw,80vh) rotateY(180deg);}
+    100% {transform: translate(110vw,50vh) rotateY(180deg);}
+  }

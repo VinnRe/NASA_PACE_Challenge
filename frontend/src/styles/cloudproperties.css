@@ -1,0 +1,155 @@
+.body2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #001f3f, #0056b3); /* Dark blue gradient */
+    color: #fff; /* Light text color for contrast */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 2em;
+}
+
+.cloud-container {
+    padding: 20px;
+}
+.cloud-image-container {
+    flex: 1; /* Allow the image container to take up space */
+    max-width: 50%; /* Limit the maximum width to 50% */
+    display: flex;
+    justify-content: center; /* Center image inside its container */
+}
+.cloud-header {
+    background-color: #003366; /* Darker blue */
+    margin-left: 2em;
+    margin-right: 2em;
+    color: white;
+    border: 5px solid #f7f7f7; /* Bright yellow for contrast */
+    animation: headerBounce 2s ease infinite alternate;
+}
+
+.cloud-title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.cloud-subtitle {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #ffffff; /* Light yellow */
+}
+
+.cloud-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.cloud-button {
+    background-color: #208194; /* Bright yellow */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.cloud-button:hover {
+    background-color: #ffc107; /* Lighter yellow */
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.cloud-info {
+    display: flex; /* Use flexbox to align image and interactive container */
+    justify-content: center; /* Center the items horizontally */
+    margin-top: 30px;
+
+}
+.cloud-buttons-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin: 20px 0;
+}
+
+.cloud-subtitle {
+    margin-top: -10px;
+    font-size: 2em;
+    color: #ffffff; /* Light yellow */
+    margin-right: 20px; /* Space between title and buttons */
+}
+
+.cloud-img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+    max-width: 500px; /* Maximum width limit */
+    max-height: 300px; /* Maximum height limit */
+}
+
+.cloud-description {
+    font-size: 1.4em;
+    color: #333;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    border-radius: 15px;
+    display: inline-block;
+    animation: bounceText 1.5s infinite ease-in-out;
+    margin-top: 50px;
+}
+
+.interactive-container {
+    flex: 1; /* Allow the interactive container to take up space */
+    max-width: 50%; /* Limit the maximum width to 50% */
+    margin-left: 20px; /* Add some spacing between image and interactive section */
+    padding: 20px; /* Add padding for better appearance */
+    background-color: rgba(0, 87, 255, 0.8); /* Semi-transparent blue */
+    border-radius: 20px;
+}
+
+.interactive-slider {
+    width: 80%;
+    margin-top: 15px;
+    appearance: none;
+    background-color: #fff; /* White for contrast */
+    border-radius: 10px;
+}
+
+.interactive-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ffcc00; /* Bright yellow */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.value-display {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.cloud-footer {
+    margin-top: 30px;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #003366; /* Darker blue */
+    padding: 20px;
+    color: white;
+    border-top: 5px solid #ffffff; /* Bright yellow for contrast */
+}
+
+@keyframes headerBounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+@keyframes bounceText {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
