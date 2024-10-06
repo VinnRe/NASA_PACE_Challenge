@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,6 +18,7 @@ html {
     background-color: #EBF4F6;
     padding: 1rem ;
 }
+
 .container h1{
     color:#4C3BCF;
     font-family: "Rubik", system-ui;
@@ -37,7 +39,7 @@ html {
 }
 .navlink a {
     text-decoration: none;
-    color:#4C3BCF;
+    color: #6E4EE2;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -49,6 +51,7 @@ html {
     background-color: #EBF4F6;  
     text-align: center;
 }
+
 .bodycontainer h1{
  padding-top: 5rem;
 font-size: 5rem;
@@ -65,14 +68,14 @@ font-family: "Rubik", system-ui;
   font-style: normal;
 }
 .play {
-    color: #FFDC7F;
+    color: #EBC256;
     font-family: "Shadows Into Light", cursive;
   font-weight: 500;
   font-style: normal;
 }
 
 .secondbodycontainer {
-    background-color: #604CC3;
+    background-color: #6E4EE2;
     height: 100vh;
 }
 
@@ -131,13 +134,22 @@ font-family: "Rubik", system-ui;
     display: flex;
     justify-content: center;
     position: relative;
-    background-color: #7AA2E3;
+    background-color: #D8C3F7;
+    border-radius: 35px;
+    box-shadow:  11px 11px 22px #c8cfd1,
+                 -11px -11px 22px #ffffff;
 }
 .boxtwo{
-    background-color: #6AD4DD;
+    background-color: #6E4EE2;
+    border-radius: 35px;
+    box-shadow:  11px 11px 22px #c8cfd1,
+                 -11px -11px 22px #ffffff;
 }
 .boxthree {
-    background-color: #FFDC7F;
+    background-color: #EBC256;
+    border-radius: 35px;
+    box-shadow:  11px 11px 22px #c8cfd1,
+                 -11px -11px 22px #ffffff;
 }
 .boxone h1{
     margin-top: 7rem;
@@ -193,7 +205,7 @@ font-family: "Rubik", system-ui;
 }
 
 footer {
-    background-color: #7AA2E3; /* Light background */
+    background-color: #6E4EE2; /* Light background */
     color: black; /* Dark text */
     padding: 20px 40px;
     text-align: center;
