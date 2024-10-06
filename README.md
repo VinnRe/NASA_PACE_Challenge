@@ -20,7 +20,7 @@ The tools we used for the frontend part of the web application is ReactJS and Vi
 
 ## Demo
 
-Insert gif or link to demo
+[BlueSphere Video Demo](https://drive.google.com/file/d/1r7UUQ7iaRvF0qfcBw7HP82V8wZzAq_BH/view?usp=sharing)
 
 
 ## Run Locally
@@ -52,7 +52,7 @@ Start the server
 ```
 
 ## To run the backend and get the PACE data. 
-We are assuming you are using Python 3.10 or above
+We are assuming you are using Python 3.10 or above and using a virtual environment
 
 ```bash
   cd backend
