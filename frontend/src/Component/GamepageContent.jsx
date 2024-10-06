@@ -1,17 +1,28 @@
 import React, { useState } from 'react';
-import contentData from './data.json'; // Assuming this is your JSON
+import contentData from './data.json'; 
 import { Link } from 'react-router-dom';
+import GamepageButton from './GamepageButton';
 
 const GamepageContent = () => {
-  const [content, setContent] = useState('');
   const [theme, setTheme] = useState('');
+  const [description, setDescription] = useState('');
+  const [buttonText, setButtonText] = useState('');
+  const [link, setLink] = useState('');
 
   const handleContentChange = (key) => {
     const selectedContent = contentData[key];
     if (selectedContent) {
-      setContent(selectedContent.content); // Set the content
-      setTheme(selectedContent.theme);     // Set the theme
-      console.log("Selected Content:", selectedContent);  // Debugging
+      // Update the state for theme, buttonText, and link
+      setTheme(selectedContent.theme);
+      setDescription(selectedContent.description);
+      setButtonText(selectedContent.buttonText);
+      setLink(selectedContent.link);
+    } else {
+      // Clear if no content is selected
+      setTheme('');
+      setDescription('');
+      setButtonText('');
+      setLink('');
     }
   };
 
@@ -32,9 +43,11 @@ const GamepageContent = () => {
           </div>
 
           <div className="gamecontent">
-            {/* Display welcome message if no content is active */}
-            {content ? (
-              <p dangerouslySetInnerHTML={{ __html: content }} />
+            {buttonText && description && link ? (
+              <div className='lesson-content'>
+                <p>{description}</p>
+                <GamepageButton buttonText={buttonText} link={link} />
+              </div>
             ) : (
               <p>Welcome here!</p>
             )}
