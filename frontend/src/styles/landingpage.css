@@ -206,13 +206,13 @@ html {
 
 /* Specific styling for quiz icon */
 .quizicon {
-    color: #FF6347; /* Tomato red to stand out */
-    font-size: 4rem; /* Consistent with other icons */
+    color: #FF6347; 
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 /* Footer container styling */
 .nasa-footer {
-    background-color: #1A1A1A;
+    background-color: #212121;
     color: #fff;
     padding: 4rem 2rem;
     font-family: "Roboto", sans-serif;
