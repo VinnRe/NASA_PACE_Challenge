@@ -21,6 +21,7 @@ The tools we used for the frontend part of the web application is ReactJS and Vi
 ## Demo
 
 [BlueSphere Video Demo](https://drive.google.com/file/d/1r7UUQ7iaRvF0qfcBw7HP82V8wZzAq_BH/view?usp=sharing)
+[BlueSphere Website Images](https://drive.google.com/drive/folders/1a204pLBe80M781dYPcoWVx1wDkgMnhsA?usp=sharing)
 
 
 ## Run Locally
