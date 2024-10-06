@@ -6,81 +6,75 @@
     box-sizing: border-box;
 }
 
-/* .game-card-container {
-    position: relative; 
-    margin-top: 40px;
-    width: 95%; 
-    z-index: 2000;
-    border: #212121 1px solid;
-    border-radius: 10px;
+.gamepagecontainer {
+    background-image: url('../assets/pace.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.game-card-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px; 
-    z-index: -1;
-} */
+.game-card-container {
+    width: 80%;
+}
 
 .firstline-container, .secondline-container, .gamecontent {
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Optional: if there's extra padding, remove it */
+    margin: 0;
+    padding: 0;
 }
 
 .gamepagecontent {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 40px 25px 40px;
-    gap: 0; /* Remove gap between flex items */
+    gap: 2rem;
     padding: 4rem 0 1rem 0
 }
 
 .gamecontent {
     border: 2px solid black;
-    width: 500px;
+    width: 100%;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.9); /* Transparency for better readability */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.firstline-container {
-    width: 25%;
+.firstline-container, .secondline-container {
+    width: 35%;
     border-radius: 10px;
 }
 
-.secondline-container {
-    width: 25%;
-    border-radius: 10px;
-}
-
-.firstline ul li, .secondline ul li {
-    background-color: #fff;
+.firstline-container div, .secondline-container div {
+    margin-bottom: 2rem;
     text-align: center;
-    margin: 3rem 2rem;
-    padding: 40px 80px;
-    height: 20vh;
-    border: 2px solid black;
-    list-style-type: none;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 0.3s ease;
+    color: white;
 }
 
-.firstline ul li:hover, .secondline ul li:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+.firstline-container div:hover, .secondline-container div:hover {
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
-.firstline ul li a, .secondline ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.plankton-btn {
+    background-color: #40826d;
+}
+
+.aero-btn {
+    background-color: #C4A484;
+}
+
+.cloud-btn {
+    background-color: #CCDBE3;
+}
+
+.ocean-btn {
+    background-color: #57B8BC;
 }
 
 /* Plankton Theme: Green with wave-like background */
@@ -89,7 +83,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
 }
 
 /* Ocean Theme: Deep blue with soft gradients to represent depth */
@@ -107,7 +100,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #333;
 }
 
 /* Aerosol Theme: Sky blue with soft white cloud-like patterns */

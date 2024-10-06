@@ -20,19 +20,14 @@ const GamepageContent = () => {
       <div className="game-card-container">
         <div className="gamepagecontent">
           <div className="firstline-container">
-            <div className="firstline">
-              <ul>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('plankton')}>
-                    <p><img width="64" height="64" src="https://img.icons8.com/ios-filled/50/plankton.png" alt="plankton"/>Plankton</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('aerosol')}>
-                  <p><img width="64" height="64" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>Aerosol</p>
-                  </a>
-                </li>
-              </ul>
+            <div className="game-btn plankton-btn" onClick={() => handleContentChange('plankton')}>
+              <img width="64" height="64" src="https://img.icons8.com/ios-filled/50/plankton.png" alt="plankton"/>
+              <p>Phytoplankton</p>
+            </div>
+
+            <div className="game-btn aero-btn" onClick={() => handleContentChange('aerosol')}>
+              <img width="64" height="64" src="https://img.icons8.com/ios-filled/50/deadly-spray.png" alt="deadly-spray"/>
+              <p>Aerosol</p>
             </div>
           </div>
 
@@ -46,19 +41,13 @@ const GamepageContent = () => {
           </div>
 
           <div className="secondline-container">
-            <div className="secondline">
-              <ul>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('ecosystem')}>
-                    <p><img width="64" height="64" src="https://img.icons8.com/?size=100&id=117004&format=png&color=000000" alt="clouds"/>Clouds</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" onClick={() => handleContentChange('ocean')}>
-                    <p><img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>Ocean</p>
-                  </a>
-                </li>
-              </ul>
+            <div className="game-btn cloud-btn" onClick={() => handleContentChange('ecosystem')}>
+              <img width="64" height="64" src="https://img.icons8.com/?size=100&id=117004&format=png&color=000000" alt="clouds"/>
+              <p>Clouds</p>
+            </div>
+            <div className="game-btn ocean-btn" onClick={() => handleContentChange('ocean')}>
+              <img width="64" height="64" src="https://img.icons8.com/arcade/64/ocean-wave.png" alt="ocean-wave"/>
+              <p>Ocean</p>
             </div>
           </div>
         </div>
