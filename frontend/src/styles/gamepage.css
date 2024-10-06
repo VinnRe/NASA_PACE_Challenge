@@ -6,76 +6,118 @@
     box-sizing: border-box;
 }
 
+.gamepagecontainer {
+    background-image: url('../assets/pace.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-card-container {
+    width: 80%;
+}
+
+.firstline-container, .secondline-container, .gamecontent {
+    margin: 0;
+    padding: 0;
+}
+
 .gamepagecontent {
-    padding: 6rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 25px 40px;
+    gap: 2rem;
+    padding: 4rem 0 1rem 0
 }
 
 .gamecontent {
     border: 2px solid black;
-    width: 500px;
+    width: 100%;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.9); /* Transparency for better readability */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.firstline ul li, .secondline ul li {
-    background-color: transparent;
-    text-align: center;
-    margin: 5rem;
-    border: 2px solid black;
-    width: 15rem;
-    height: auto;
-    list-style-type: none;
+.firstline-container, .secondline-container {
+    width: 35%;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.firstline ul li:hover, .secondline ul li:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+.firstline-container div, .secondline-container div {
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 0.3s ease;
+    color: white;
 }
 
-.firstline ul li a, .secondline ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.firstline-container div:hover, .secondline-container div:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.plankton-btn {
+    background-color: #40826d;
+}
+
+.aero-btn {
+    background-color: #C4A484;
+}
+
+.cloud-btn {
+    background-color: #CCDBE3;
+}
+
+.ocean-btn {
+    background-color: #57B8BC;
 }
 
 /* Plankton Theme: Green with wave-like background */
 .plankton-theme {
-    background: linear-gradient(135deg, #2E8B57 30%, #66CDAA 100%);
-    color: white;
+    background-image: url('../assets/plankton.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Ocean Theme: Deep blue with soft gradients to represent depth */
 .ocean-theme {
-   
-        background: linear-gradient(135deg, #1E3C72, #2A5298);
-        color: #ffffff; /* White text for readability */
-    /* White text for readability */
-    position: relative;
-    overflow: hidden;
+    background-image: url('../assets/ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 /* Ecosystem Theme: Vibrant green with softer gradients */
-.ecosystem-theme {
-    background: linear-gradient(135deg, #32CD32 30%, #98FB98 100%);
-    color: #333;
+.clouds-theme {
+    background-image: url('../assets/clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Aerosol Theme: Sky blue with soft white cloud-like patterns */
 .aerosol-theme {
-    background: linear-gradient(135deg, #87CEEB 30%, #E0FFFF 100%);
+    background-image: url('../assets/aerosol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
+}
+
+.gamecontent {
+    height: 60vh;
 }
 
 .gamepagecontainer {
     height: 100vh;
-    transition: background-color 0.5s ease;
+    transition: background-image 0.5s ease-in-out;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -87,47 +129,35 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(42,82,190);
+    /* background-color: var(--navbar-primary-color); */
     padding: 10px;
     color: white;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .logo {
+    margin-right: 20px;
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
+    margin-left: 1rem;
 }
 
-.navbar-left img, .navbar-left button {
-    margin-right: 1em;
-}
-
-.navbar-left button {
-    background: none;
-    border: solid;
+.navbar-left a {
     color: white;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 100%;
-    padding: 13px; /* You can use shorthand here */
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
-.search-bar input {
-    padding: 1em;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    width: 100%;
+.home-btn-game, .back-btn-game {
+    transition: 0.3s ease;
+    filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
 }
 
-.homeIcon {
-    width: 5em;
-    background-color: transparent;
-    border: none;
-}
-.container h1{
-    color:#4C3BCF;
-    font-family: "Rubik", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+.home-btn-game:hover, .back-btn-game:hover {
+    color: var(--navbar-dark-color);
+    transform: scale(1.3);
 }

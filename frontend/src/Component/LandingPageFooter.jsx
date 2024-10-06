@@ -1,21 +1,33 @@
-import React from 'react'
+import React from 'react';
 
 const LandingPageFooter = () => {
   return (
-    <footer>
-  <div class="footer-container">
-    <h2>NASA Space Apps Challenge 2024</h2>
-    <p>Team: HexaHacks || BatStateU Alangilan SCRIPT</p>
-    <div class="social-media">
-      <a href="https://github.com/VinnRe/NASA_PACE_Challenge" target="_blank">GitHub</a>
-      <a href="https://www.facebook.com/CICS.SCRIPT" target="_blank">Facebook</a>
-    </div>
-    <p>&copy; 2024 HexaHacks. All rights reserved.</p>
-  </div>
-</footer>
+    <footer className="nasa-footer">
+      <div className="footer-container">
+        <div className="footer-left">
+          <h2>HexaHacks</h2>
+          <p className="footer-description">
+            This website is part of the NASA Space Apps Challenge, focusing on innovative solutions for space exploration and beyond.
+          </p>
+        </div>
+        
+        <div className="footer-right">
+          <h3>Meet our Team</h3>
+          <p className="footer-description">
+          We are a diverse group of passionate individuals united by our commitment to tackling global challenges through technology and creativity. Join us as we work together to develop innovative solutions for the future!
+          </p>
+        </div>
+      </div>
 
-  
-  )
+      <div className="footer-bottom">
+        <p>&copy; 2024 HexaHacks. All Rights Reserved.</p>
+        <div className="social-icons">
+          <a href="https://www.facebook.com/CICS.SCRIPT">Facebook</a>
+          <a href="">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default LandingPageFooter
+export default LandingPageFooter;

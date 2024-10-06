@@ -1,7 +1,7 @@
 {
   "plankton": {
     "theme": "plankton-theme",
-    "content": "Description: PACE will measure different types of phytoplankton offering insights into the diversity and health of marine life. <a href='https://example.com'>Learn more about plankton</a>"
+    "content": "<a href='/phytoplankton'>Learn more about plankton</a>"
   },
   "aerosol": {
     "theme": "aerosol-theme",
@@ -9,10 +9,10 @@
   },
   "ocean": {
     "theme": "ocean-theme",
-    "content": "This is the content about the Ocean ecosystem. <a href='https://example.com/ocean'>Discover more about the ocean</a>"
+    "content": "This is the content about the Ocean ecosystem. <a href='/'>Discover more about the ocean</a>"
   },
   "ecosystem": {
-    "theme": "ecosystem-theme",
+    "theme": "clouds-theme",
     "content": "This is the content about Ecosystems. <a href='https://example.com/ecosystem'>Learn about ecosystems</a>"
   }
 }
