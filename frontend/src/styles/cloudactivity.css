@@ -1,0 +1,140 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Font style for the entire page */
+    background-color: #e0f7fa; /* Light cyan background resembling the sky */
+    margin: 0; /* No default margin */
+    padding: 0; /* No default padding */
+}
+
+/* Main Activity Container Styles */
+.activity-container {
+    max-width: 800px; /* Maximum width for the main container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center text in the container */
+    background-image: url('clouds.png'); /* Background image of clouds */
+    background-size: cover; /* Cover the entire area with clouds */
+    border-radius: 15px; /* Rounded corners for the container */
+    border: 5px solid rgb(0, 165, 202); /* Soft white border for the container */
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(135, 206, 250, 0.8); /* Semi-transparent sky blue background */
+    padding: 20px; /* Padding inside the header */
+    border-radius: 10px; /* Rounded corners for the header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    position: fixed; /* Ensures the header is not sticky */
+    z-index: 10; /* Ensures the header is on top of other elements */
+}
+
+/* Header Title */
+.header h1 {
+    color: #333; /* Dark gray color for the main title */
+    font-size: 2.5em; /* Larger font size for the title */
+}
+
+/* Header Subtitle */
+.header p {
+    color: #555; /* Slightly lighter gray for the subtitle */
+    font-size: 1.2em; /* Slightly larger font size for subtitle */
+}
+
+/* Activity Section Styles */
+.activity {
+    margin-top: 20px; /* Space above the activity section */
+    padding: 15px; /* Padding inside the activity section */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners for the activity section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Instructions Styles */
+.instructions {
+    text-align: left; /* Left-aligned text for instructions */
+    margin-bottom: 15px; /* Space below the instructions */
+}
+
+/* Instructions Heading */
+.instructions h2 {
+    color: #ff4500; /* Orange color for instruction headings */
+}
+
+/* Instructions Paragraphs */
+.instructions p {
+    color: #333; /* Dark gray color for instruction text */
+}
+
+/* Button Styles */
+.activity button {
+    background-color: #87cefa; /* Sky blue background for buttons */
+    color: white; /* White text color */
+    border: none; /* No border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 20px; /* Padding inside buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    margin: 5px; /* Margin around buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Button Hover Effect */
+.activity button:hover {
+    background-color: #68b3e7; /* Darker sky blue on hover */
+}
+
+/* Drawing Section Styles */
+#drawing-section {
+    margin-top: 20px; /* Space above the drawing section */
+}
+
+/* Canvas Styles */
+canvas {
+    border: 2px solid #000; /* Black border for the canvas */
+    background-color: #fff; /* White background for drawing */
+    margin-right: 2em;
+}
+
+/* Controls Styles */
+.controls {
+    margin-top: 10px; /* Space above the controls */
+}
+
+/* Clear Button Styles */
+.controls button {
+    background-color: #87cefa; /* Sky blue background for the clear button */
+    color: white; /* White text color */
+}
+
+/* Textarea Styles */
+.weather-prediction {
+    border: 2px solid #87cefa; /* Sky blue border for textarea */
+    border-radius: 10px; /* Rounded corners for textarea */
+    padding: 10px; /* Padding inside textarea */
+    font-size: 16px; /* Font size for textarea */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Maximum width */
+    height: 100px; /* Fixed height for textarea */
+}
+
+/* Timer Styles */
+.timer {
+    margin-top: 15px; /* Space above the timer */
+    font-size: 18px; /* Larger font size for the timer */
+    color: #333; /* Dark gray color for timer text */
+}
+
+/* Additional Styles for Cloud Theme */
+@keyframes float {
+    0% { transform: translatey(0); }
+    50% { transform: translatey(-10px); }
+    100% { transform: translatey(0); }
+}
+
+.cloud {
+    display: inline-block;
+    background: white; /* White color for clouds */
+    border-radius: 50%; /* Rounded shape for clouds */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Soft shadow for clouds */
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+}
