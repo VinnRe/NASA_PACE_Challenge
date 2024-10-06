@@ -14,7 +14,7 @@ const ThirdBodyContainer = () => {
                     <MdQuiz className='quizicon' />
                     </div>
                     <div className="boxtwo">
-                        <h1>Creative Activities</h1>
+                        <h1 className='creative-acts'>Creative Activities</h1>
                          <CiFaceSmile className='smileicon' />
 
                     </div>
