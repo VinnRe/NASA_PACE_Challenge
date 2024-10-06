@@ -1,7 +1,7 @@
 {
   "plankton": {
     "theme": "plankton-theme",
-    "description": "This is a description for plankton",
+    "description": "Plankton are the tiny, drifting organisms that form the foundation of aquatic food webs. They include both phytoplankton, which produce energy through photosynthesis, and zooplankton, which feed on other microorganisms. Despite their small size, plankton play a crucial role in supporting marine life and regulating the planet's carbon cycle.",
     "lessonButton": "About plankton",
     "lessonLink": "/phytolesson",
     "buttonText": "Learn more about plankton",
@@ -9,7 +9,7 @@
   },
   "aerosol": {
     "theme": "aerosol-theme",
-    "description": "Aerosols are tiny particles in the atmosphere.",
+    "description": "Aerosols are tiny solid or liquid particles suspended in the atmosphere, ranging in size from a few nanometers to several micrometers. They play a significant role in climate regulation, air quality, and human health. Aerosols originate from both natural sources, such as volcanic eruptions, sea spray, and forest fires, and anthropogenic activities, including industrial emissions and vehicle exhaust.",
     "lessonButton": "About aerosol",
     "lessonLink": "/aerosollesson",
     "buttonText": "Explore aerosol data",
@@ -17,7 +17,7 @@
   },
   "ocean": {
     "theme": "ocean-theme",
-    "description": "This is the content about the Ocean ecosystem.",
+    "description": "The ocean is a vast body of salt water that covers more than 70% of the Earth's surface. It is home to countless plants and animals, from tiny fish to enormous whales. Oceans play a crucial role in our planet's climate and weather patterns, providing oxygen and food, and serving as a habitat for many living creatures. ",
     "lessonButton": "About ocean",
     "lessonLink": "/oceanlesson",
     "buttonText": "Discover more about the ocean",
@@ -25,7 +25,7 @@
   },
   "clouds": {
     "theme": "clouds-theme",
-    "description": "This is the content about Ecosystems.",
+    "description": "Clouds are fluffy groups of water droplets or ice crystals that float in the sky. They can be white and puffy or gray and heavy, and they change shapes all the time. Clouds help bring rain and snow to the Earth, which is important for plants, animals, and people.",
     "lessonButton": "About clouds",
     "lessonLink": "/cloudslesson",
     "buttonText": "Learn about ecosystems",

@@ -48,7 +48,7 @@ const GamepageContent = () => {
           </div>
 
           <div className="gamecontent">
-            {description && <p>{description}</p>}
+            <p>{description || "Welcome to BlueSphere!!"}</p>
             <div className="gamecontent-btn-container">
               {buttonText && link && (
                 <GamepageButton buttonText={buttonText} link={link} />
