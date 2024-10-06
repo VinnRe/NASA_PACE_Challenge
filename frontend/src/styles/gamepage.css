@@ -6,10 +6,39 @@
     box-sizing: border-box;
 }
 
+/* .game-card-container {
+    position: relative; 
+    margin-top: 40px;
+    width: 95%; 
+    z-index: 2000;
+    border: #212121 1px solid;
+    border-radius: 10px;
+}
+
+.game-card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px; 
+    z-index: -1;
+} */
+
+.firstline-container, .secondline-container, .gamecontent {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Optional: if there's extra padding, remove it */
+}
+
 .gamepagecontent {
-    padding: 6rem;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 40px 25px 40px;
+    gap: 0; /* Remove gap between flex items */
+    padding: 4rem 0 1rem 0
 }
 
 .gamecontent {
@@ -21,13 +50,23 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.firstline-container {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.secondline-container {
+    width: 25%;
+    border-radius: 10px;
+}
+
 .firstline ul li, .secondline ul li {
-    background-color: transparent;
+    background-color: #fff;
     text-align: center;
-    margin: 5rem;
+    margin: 3rem 2rem;
+    padding: 40px 80px;
+    height: 20vh;
     border: 2px solid black;
-    width: 15rem;
-    height: auto;
     list-style-type: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -78,6 +117,10 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #333;
+}
+
+.gamecontent {
+    height: 60vh;
 }
 
 .gamepagecontainer {
